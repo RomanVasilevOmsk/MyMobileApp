@@ -41,7 +41,7 @@ var paths = {
     },
     watch: {
         html:'src/**/*.html',
-        style:'src/stylus/**/*.scss',
+        style:'src/scss/**/*.scss',
         styledist:'dist/css/app.css',
         styleVendor:'src/scss/vendor/*.scss',
         script:'src/js/app.js',

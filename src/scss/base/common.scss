@@ -1,7 +1,7 @@
-$xs-width: 320px;
-$sm-width: 640px;
-$md-width: 992px;
-$lg-width: 1280px;
+// $xs-width: 575.98px;
+$sm-width: 767.98px;
+$md-width: 991.98px;
+$lg-width: 1199px;
 
 html {
   height: 100%;
@@ -53,13 +53,12 @@ div:focus{
   outline: none;
 }
 
-// .link{
-//   color: $blue;
-//   transition: all 0.2s ease;
-
-//   &:hover{
-//     cursor: pointer;
-//     color: $blueDark;
-//     transition: all 0.2s ease;
-//   }
-// }
+.link{
+  transition: all 0.2s ease;
+  letter-spacing: 0.01em;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+  }
+}

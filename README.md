@@ -19,5 +19,5 @@ gulp build
 To start the project, run the command:
 
 ```
-yarn default
+gulp default
 ```

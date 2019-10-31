@@ -1,18 +1,25 @@
 $block : ".header";
 
 #{$block}{
-  padding: 33px 120px;
+  padding: 33px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
   @media (max-width: $lg-width) {
-    padding: 22px 78px;
+    padding: 22px 0;
+    max-width: 1042px;
+    // padding: 22px 16px;
+    // max-width: calc(1042px - 32px);
   }
   @media (max-width: $md-width) {
-    padding: 12px 38px;
+    padding: 12px 0;
+    max-width: 688px;
   }
   @media (max-width: $sm-width) {
-    padding: 10px 15px;
+    max-width: 287px;
+    padding: 10px 0;
   }
   &__logo{
     background-image: url("../images/header-logo.svg");
@@ -21,10 +28,6 @@ $block : ".header";
     background-repeat: no-repeat;
     width: 208px;
     height: 42px;
-    @media (max-width: $lg-width) {
-      // width: 208px;
-      // height: 42px;
-    }
     @media (max-width: $md-width) {
       width: 178px;
       height: 36px;
@@ -65,7 +68,7 @@ $block : ".header";
       position: fixed;
       top: 11px;
       right: 14px;
-      z-index: 9;
+      z-index: 99;
       background-image: url("../images/close-icon.svg");
       background-size: contain;
       background-position: 50% 50%;
@@ -111,6 +114,7 @@ $block : ".header";
       background-color: #fff;
       align-items: center;
       justify-content: center;
+      z-index: 98;
     }
     &-list{
       display: flex;
@@ -122,9 +126,6 @@ $block : ".header";
     &-item{
       &:not(:last-child){
         margin-right: 40px;
-        @media (max-width: $lg-width) {
-          // margin-right: 32px;
-        }
         @media (max-width: $md-width) {
           margin-right: 32px;
         }

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  AOS.init();
   //------------swiper---------//
       // var swiper = new Swiper('.swiper-container', {
       //     direction: 'vertical',

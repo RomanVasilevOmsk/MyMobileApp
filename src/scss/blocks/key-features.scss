@@ -5,30 +5,22 @@ $block : ".key-features";
   width: 100%;
   display: flex;
   margin: 0 auto;
+  height: 819px;
   @media (max-width: $lg-width) {
     max-width: 1042px;
+    height: 637px;
   }
   @media (max-width: $md-width) {
     flex-wrap: wrap;
     max-width: 688px;
+    height: 1080px;
   }
   @media (max-width: $sm-width) {
     max-width: 287px;
+    height: 2888px;
   }
   &__wrapper{
     background-color: #fff;
-    // max-width: 1200px;
-    // margin: 0 auto;
-
-    @media (max-width: $lg-width) {
-      // max-width: 1042px;
-    }
-    @media (max-width: $md-width) {
-      // max-width: 688px;
-    }
-    @media (max-width: $sm-width) {
-      // max-width: 100%;
-    }
   }
   &__title{
     font-weight: 800;
@@ -86,6 +78,7 @@ $block : ".key-features";
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-self: flex-start;
   }
   &__item{
     width: 100%;

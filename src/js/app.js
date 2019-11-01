@@ -60,9 +60,34 @@ $(document).ready(function(){
         }
       }
 
-      $( document ).ready(main);
+      var getVideoSize = function() {
+        var video = $('.expand-presence__video'),
+          videoSizeWidth = video.attr( "width" ),
+          videoSizeHeight = video.attr( "height" ),
+          windowsWidth = $(window).width();
+        switch( true ) {
+          case (windowsWidth > 1200):
+              video.attr({'width' : '599'});
+              video.attr({'height' : '365'});
+            break;
+          case (windowsWidth < 1200 && windowsWidth > 992):
+              video.attr({'width' : '464'});
+              video.attr({'height' : '260'});
+            break;
+          case (windowsWidth < 992 && windowsWidth > 768):
+              video.attr({'width' : '312'});
+              video.attr({'height' : '175'});
+            break;
+            case (windowsWidth < 768 ):
+              video.attr({'width' : '275'});
+              video.attr({'height' : '154'});
+            break;
+        }
+       }
 
-      $( window).resize(visibleMobileIcon);
+      $( document ).ready(main, getVideoSize);
+      $( window ).ready(getVideoSize);
+      $( window).resize(visibleMobileIcon, getVideoSize);
       //Mobile menu
 
       //---------counterUp-----------//

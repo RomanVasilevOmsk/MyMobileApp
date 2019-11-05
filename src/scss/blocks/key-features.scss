@@ -50,7 +50,6 @@ $block : ".key-features";
       }
     }
     &-desc{
-      font-weight: 500;
       font-size: 24px;
       line-height: 36px;
       color: #8D9AAD;
@@ -79,6 +78,8 @@ $block : ".key-features";
     flex-wrap: wrap;
     justify-content: flex-end;
     align-self: flex-start;
+    position: relative;
+    z-index: 1;
   }
   &__item{
     width: 100%;

@@ -105,7 +105,15 @@ $( document ).ready(function() {
     AOS.init();
     getVideoSize();
     mobileMenu();
+
+  $("#arrowToTop, .header__nav-link, .footer__nav-link").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},1500);
+  });
 });
+
+
 
 $(window).on('resize', function () {
   visibleMobileIcon();

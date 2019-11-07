@@ -1,0 +1,138 @@
+$block : ".contact-form";
+
+#{$block}{
+  max-width: 590px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: $sm-width) {
+    max-width: 280px;
+  }
+  &__wrapper{
+    padding-bottom: 160px;
+    position: relative;
+    @media (max-width: $lg-width) {
+      padding-bottom: 100px;
+    }
+    @media (max-width: $sm-width) {
+      padding-bottom: 80px;
+    }
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 90px;
+    margin-bottom: 30px;
+    color: #1B2D41;
+    text-align: center;
+    @media (max-width: $sm-width) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 16px;
+    }
+  }
+  &__subTitle{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 60px;
+    color: #8D9AAD;
+    text-align: center;
+    font-weight: 400;
+    @media (max-width: $sm-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+    & br {
+      display: none;
+      @media (max-width: $sm-width) {
+        display: block;
+      }
+    }
+  }
+  &__input{
+    padding: 28px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B2D41;
+    border: none;
+    border-bottom: 1px solid #E4E8F1;
+    box-sizing: border-box;
+    &:not(:last-child){
+      margin-bottom: 24px;
+      @media (max-width: $sm-width) {
+        margin-bottom: 16px;
+      }
+    }
+    &:last-child{
+      margin-bottom: 40px;
+      @media (max-width: $sm-width) {
+        margin-bottom: 24px;
+      }
+    }
+    &::-webkit-input-placeholder {
+      color: #8D9AAD;
+    }
+    &::-moz-placeholder {
+      color: #8D9AAD;
+    }
+    &:-ms-input-placeholder {
+      color: #8D9AAD;
+    }
+    &:-moz-placeholder {
+      color: #8D9AAD;
+    }
+  }
+  &__btn{
+    background: #40C2FF;
+    border-radius: 8px;
+    width: 202px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    transition: all 0.2s ease;
+    margin: 0 auto;
+    border: none;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all 0.2s ease;
+    }
+  }
+  &__anchor{
+    &-link{
+      position: absolute;
+      bottom: 148px;
+      right: 30px;
+      background: #40C2FF;
+      border-radius: 8px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.2s ease;
+      }
+      @media (max-width: $lg-width) {
+        bottom: 48px;
+      }
+      @media (max-width: $sm-width) {
+        width: 30px;
+        height: 30px;
+        bottom: 0;
+        right: 10px;
+      }
+    }
+  }
+}

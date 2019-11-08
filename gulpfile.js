@@ -28,9 +28,9 @@ gulp.task('autoprefixertask2', function () {
 var paths = {
 
     src: {
-        html:'src/index.html',
+        html:'src/**/*.html',
         style:'src/scss/app.scss',
-        script:'src/js/app.js',
+        script:'src/js/*.js',
         contentImages: 'src/images/**/*.*',
     },
     dist: {
@@ -44,8 +44,7 @@ var paths = {
         style:'src/scss/**/*.scss',
         styledist:'dist/css/app.css',
         styleVendor:'src/scss/vendor/*.scss',
-        script:'src/js/app.js',
-        scriptsVendor:'src/js/vendor/*.js',
+        script:'src/js/*.js',
         contentImages: 'src/images/**/*.*',
     }
 };

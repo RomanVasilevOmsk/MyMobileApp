@@ -101,17 +101,6 @@
     };
 
 
-      //---------counterUp-----------//
-
-      // $('.counts__content').counterUp({
-      //     delay: 10,
-      //     time: 3000
-      // });
-  // });
-
-  // $(document).ready(navFix);
-  // $(window).resize(navFix);
-
 $( document ).ready(function() {
     AOS.init();
     mobileMenu();

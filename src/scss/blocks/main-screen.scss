@@ -265,8 +265,17 @@ $block : ".main-screen";
         width: 159.46px;
         height: 116.68px;
         box-shadow: 0px 28px 52px rgba(86, 86, 86, 0.25);
-        background-image: url("../images/preview-instals-img.svg");
-
+        background-image: url("../images/preview-instals-img.png");
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+          background-image: url("../images/preview-instals-img@2x.png");
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+          background-image: url("../images/preview-instals-img@3x.png");
+        }
+        @media (max-width: $lg-width) {
+          width: 360.5px;
+          height: 480.08px;
+        }
         @media (max-width: $lg-width) {
           width: 153.82px;
           height: 112.55px;
@@ -288,8 +297,14 @@ $block : ".main-screen";
         width: 373.73px;
         height: 497.69px;
         box-shadow: 0px 32px 52px rgba(50, 50, 50, 0.3);
-        background-image: url("../images/preview-gallery-img.svg");
+        background-image: url("../images/preview-gallery-img.png");
         border-radius: 15px;
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+          background-image: url("../images/preview-gallery-img@2x.png");
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+          background-image: url("../images/preview-gallery-img@3x.png");
+        }
         @media (max-width: $lg-width) {
           width: 360.5px;
           height: 480.08px;
@@ -312,7 +327,13 @@ $block : ".main-screen";
         width: 180.7px;
         height: 72.28px;
         box-shadow: 0px 32px 52px rgba(60, 60, 60, 0.35);
-        background-image: url("../images/preview-features-img.svg");
+        background-image: url("../images/preview-features-img.png");
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+          background-image: url("../images/preview-features-img@2x.png");
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+          background-image: url("../images/preview-features-img@3x.png");
+        }
         @media (max-width: $lg-width) {
           width: 174.3px;
           height: 69.72px;
@@ -340,7 +361,13 @@ $block : ".main-screen";
         width: 220.97px;
         height: 443.16px;
         box-shadow: none;
-        background-image: url("../images/preview-phone-img.svg");
+        background-image: url("../images/preview-phone-img.png");
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+          background-image: url("../images/preview-phone-img@2x.png");
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+          background-image: url("../images/preview-phone-img@3x.png");
+        }
         &::after{
           content: "";
           width: 95%;

@@ -1,0 +1,96 @@
+$block : ".about-thought";
+
+#{$block}{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 146px 0;
+  @media (max-width: $lg-width) {
+    max-width: 940px;
+    padding: 100px 0;
+  }
+  @media (max-width: $md-width) {
+    max-width: 688px;
+    padding: 80px 0;
+  }
+  @media (max-width: $sm-width) {
+    max-width: 288px;
+    padding: 60px 0 400px;
+  }
+  &__wrapper{
+    background-color: #2052C7;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-position: 100% 100%;
+      background-image: url("../images/about-thought-bg.png");
+      @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+        background-image: url("../images/about-thought-bg@2x.png");
+      }
+      @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+        background-image: url("../images/about-thought-bg@3x.png");
+      }
+      @media (max-width: $sm-width) {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-image: url("../images/about-thought-bg-small.png");
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 2){
+          background-image: url("../images/about-thought-bg-small@2x.png");
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 3){
+          background-image: url("../images/about-thought-bg-small@3x.png");
+        }
+      }
+    }
+  }
+  &__label{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #40C2FF;
+    margin-bottom: 8px;
+    @media (max-width: $md-width) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    margin-bottom: 32px;
+    @media (max-width: $lg-width) {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: $md-width) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+  }
+  &__desc{
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    @media (max-width: $lg-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media (max-width: $md-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

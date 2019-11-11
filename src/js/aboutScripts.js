@@ -47,15 +47,6 @@
 
 
 
-      //---------counterUp-----------//
-
-      // $('.counts__content').counterUp({
-      //     delay: 10,
-      //     time: 3000
-      // });
-  // });
-
-
 $( document ).ready(function() {
     AOS.init();
     mobileMenu();
@@ -83,6 +74,13 @@ $( document ).ready(function() {
       }
     }
   });
+
+   //---------counterUp-----------//
+   $('.about-counter__item-count').counterUp({
+    delay: 100,
+    time: 1000
+  });
+
 });
 
 
